@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const TopRow = () => {
-  const [homeScore, setHomeScore] = useState(0);
-  const [awayScore, setAwayScore] = useState(0);
+const TopRow = ({homeScore, awayScore}) => {
     return (
         <div className="topRow">
             <div className="home">
